@@ -19,13 +19,13 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     return pd.read_csv(
-        r"C:\Ecommerce_Analytics_Projects\data\cleaned_sales.csv"
+        "data/cleaned_sales.csv"
     )
 
 @st.cache_data
 def load_rfm():
     return pd.read_csv(
-        r"C:\Ecommerce_Analytics_Projects\data\rfm.csv"
+        "data/rfm.csv"
     )
 
 df = load_data()
